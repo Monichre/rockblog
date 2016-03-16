@@ -1,0 +1,92 @@
+/*Page Hacks for better CSS*/
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+/*-----Page Begins----*/
+
+body {
+  margin: auto;
+  font-family: 'Raleway', sans-serif;
+}
+
+header{
+  text-align: center;
+  height: 160px;
+
+  border-bottom: 2px solid black;
+
+
+
+}
+
+nav {
+  padding-top: 130px;
+  text-align: center;
+
+
+}
+
+nav li {
+  text-align: center;
+  padding: 5px;
+  display: inline;
+  padding-top:50% ;
+
+
+}
+
+main {
+  padding: 2%;
+}
+
+.background-image {
+float: right;
+
+}
+
+
+article.tour{
+
+  width: 20%;
+  float: left;
+
+}
+
+section {
+  width:  80%;
+  float: left;
+
+}
+
+li{
+
+
+}
+.about, .press {
+
+  clear: both;
+  padding-top: 10px;
+}
